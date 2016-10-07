@@ -1,0 +1,23 @@
+
+<h1>{{onedata.name}}</h1>
+<ul>
+  <li><h3>Forms:</h3></li>
+  <li ng-repeat="oneform in onedata.forms">{{oneform.name}}</li>
+  <br/>
+  <li><h3>Abilities:</h3></li>
+  <li ng-repeat="ability in onedata.abilities">{{ability.ability.name}}</li>
+  <br/>
+  <li><h3>Stats:</h3></li>
+  <li ng-repeat="onestat in onedata.stats">{{onestat.stat.name}}:{{onestat.base_stat}}
+  </li>
+  <br/>
+  <li><h3>Weight:</h3></li>
+  <li> {{onedata.weight}} tonnes</li>
+  <br/>
+</ul>
+
+</ul>
+
+
+
+  <!-- <li ng-repeat="ability in onedata.abilities track by $index">{{onedata.abilities[$index].ability.name}}</li> this can help you with duplicates in your array-->
